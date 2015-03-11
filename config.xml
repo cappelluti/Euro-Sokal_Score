@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "Euro & Sokal Score"
+    version     = "1.0.0"
+    versionCode = "10" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <preference name="phonegap-version" value="3.6.3" />
+    <name>Euro-Sokal Score</name>
+    <description>Applicazione per il calcolo degli score Euro e Sokal</description>
+	<author href="http://www.edizioniseed.it" email="info@edizioniseed.it">SEEd</author>
+	
+   <preference name="permissions"                value="none"/>
+   
+   <!-- Customize your app and platform with the preference element. -->
+   <preference name="phonegap-version" value="3.6.3" />   					<!-- all: current version of PhoneGap -->
+   <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+   <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+   <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+   <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+   <preference name="ios-statusbarstyle"         value="black-translucent" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+   <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+   <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+   <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+   <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
+   <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+   <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
+   <icon src="icon.png" />
+   <gap:splash src="splash.png" gap:platform="android"/>
+
+</widget>

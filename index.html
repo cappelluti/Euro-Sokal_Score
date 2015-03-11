@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Euro&Sokal Score</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">	
+    <link rel="stylesheet" href="css/template.css">
+    
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/funzioni.js"></script>
+</head>
+
+<body>
+    <!--Calcolo score-->
+    <div data-role="page" id="home">
+        <div data-role="header" data-position="fixed">            
+            <h1>Euro&Sokal Score</h1>          
+        </div>
+		
+        <div data-role="content">
+			<fieldset data-role="controlgroup" data-type="horizontal">
+			<label for="scelta_score_euro">Euro Skore</label>
+			<input type="radio" onclick="calcola()" name="scelta_score" value="euro" id="scelta_score_euro" checked="checked">
+			<label for="scelta_score_sokal">Sokal Score</label>
+			<input type="radio" onclick="calcola()" name="scelta_score" value="sokal" id="scelta_score_sokal">
+			</fieldset>
+			
+			<div class="output">
+				<p class='min'></br></p>
+				<p></br></p>
+			</div>	    
+			
+			<label for="eta">Et&agrave; (anni)</label>
+			<input type="range" id="eta" value="45" min="10" max="85" />
+			
+			<label for="splenomegalia">Splenomegalia (cm)</label>
+			<input type="range" id="splenomegalia" value="3" min="0" max="30" />
+			
+			<label for="piastrine">Piastrine x 10<span class="superscript">3</span>/&micro;l</label>
+			<input type="range" id="piastrine" value="495" min="43" max="3490" />
+			
+			<label for="blasti">Blasti (%)</label>
+			<input type="range" id="blasti" value="3" min="0" max="10" />
+			
+			<div class="euro">
+				<label for="basofili">Basofili (%)</label>
+				<input type="range" id="basofili" value="4" min="0" max="33" />
+				
+				<label for="eosinofili">Eosinofili (%)</label>
+				<input type="range" id="eosinofili" value="1" min="0" max="24" />
+			</div>   
+        </div>
+	
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="none" data-icon="gear">Calcolo score</a></li>
+                    <li><a href="#info" data-transition="none" data-icon="info">Informazioni utili</a></li>
+				</ul>
+            </div>
+        </div>
+    </div>
+    
+    
+	
+	
+    
+    <!--Calcolo score-->
+    <div data-role="page" id="info">
+        <div data-role="header" data-position="fixed">
+            <h1>Euro&Sokal Score</h1>    
+        </div>
+        <div data-role="content">
+				<p><b>Euro&Sokal Score</b> è un'applicazione per il calcolo del rischio nella LMC e permette di individuare il rischio di progressione della Leucemia Mieloide
+			Cronica, mediante il calcolo di Sokal score ed Euro score.</p>
+				<p><b>Sokal</b> score si basa sui criteri elaborati da Sokal et al. e prevede tre classi di rischio di progressione della patologia (basso, intermedio
+			ed elevato, con sopravvivenza media che varia dai 3 ai 6 anni) sulla base di età, grado di splenomegalia, conta piastrinica e percentuale di blasti circolanti.</p>
+				<p><b>Euro</b> score si basa sui criteri elaborati da Hasford et al. e i parametri valutati per l’identificazione della classe di rischio (basso, intermedio
+			ed elevato, con una sopravvivenza media che va dai 3,5 agli 8 anni) sono età, grado di splenomegalia, conta piastrinica e percentuali di blasti, eosinofili e basofili circolanti.</p>
+
+			<h2>Riferimenti bibliografici</h2>
+				<ul>
+					<li>Sokal JE, Cox EB, Baccarani M, Tura S, Gomez GA, Robertson JE et al. Prognostic discrimination in “good-risk” chronic granulocytic
+					leukemia. <em>Blood</em> 1984; 63: 789-99</li>
+					<li>Hasford J, Pfirrmann M, Hehlmann R, Allan NC, Baccarani M, Kluin-Nelemans JC et al. A new prognostic score for survival of patients
+					with chronic myeloid leukemia treated with interferon alfa. Writing Committee for the Collaborative CML Prognostic Factors Project Group. <em>J Natl Cancer Inst</em> 1998; 90: 850-8</li>
+					<li>Baccarani M, Saglio G, Goldman J, Hochhaus A, Simonsson B, Appelbaum F. Evolving concepts in the management of chronic myeloid leukemia: recommendations from an expert panel on behalf of the European LeukemiaNet. <em>Blood</em> 2006; 108: 1809-20</li>
+				</ul>
+			</div>
+	
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="none" data-icon="gear">Calcolo score</a></li>
+                    <li><a href="#info" data-transition="none" data-icon="info">Informazioni utili</a></li>
+				</ul>
+            </div>
+        </div>
+    </div>   
+
+</body>
+</html>
