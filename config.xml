@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "Euro & Sokal Score"
+    id          = "Ipertensione in pediatria"
     version     = "1.0.0"
     versionCode = "10" >
 
     <!-- versionCode is optional and Android only -->
 
     <preference name="phonegap-version" value="3.6.3" />
-    <name>Euro-Sokal Score</name>
-    <description>Applicazione per il calcolo degli score Euro e Sokal</description>
+    <name>Ipertensione in pediatria</name>
+    <description>Applicazione di calcolo dei percentili per l'ipertensione in pediatria</description>
 	<author href="http://www.edizioniseed.it" email="info@edizioniseed.it">SEEd</author>
 	
    <preference name="permissions"                value="none"/>
    
    <!-- Customize your app and platform with the preference element. -->
-   <preference name="phonegap-version" value="3.6.3" />   					<!-- all: current version of PhoneGap -->
+   <preference name="phonegap-version"           value="3.3.0" />          <!-- all: current version of PhoneGap -->
    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
